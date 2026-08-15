@@ -1,4 +1,4 @@
-import { ts_logo, react, nodejs, expressjs } from "../../assets/images";
+import * as Images from '../../assets/images';
 
 type Habilidade = {
   nome: string;
@@ -8,22 +8,23 @@ type Habilidade = {
 
 export default function Skills() {
   const habilidades: Habilidade[] = [
-    { nome: "TypeScript", url_img: ts_logo, rounded: false },
-    { nome: "Angular", url_img: "https://cdn.brandfetch.io/angularjs.org/w/400/h/400?c=1id5-s0OdQqUgvVvv5A", rounded: true },
-    { nome: "React", url_img: react, rounded: false },
-    { nome: "Node.js", url_img: nodejs, rounded: false },
-    { nome: "Express.js", url_img: expressjs, rounded: false },
-    { nome: "MySQL", url_img: "https://cdn.brandfetch.io/mysql.com/w/512/h/348/logo?c=1id5-s0OdQqUgvVvv5A", rounded: false },
-    { nome: "PostgreSQL", url_img: "https://cdn.brandfetch.io/postgresql.com/w/496/h/512/logo?c=1id5-s0OdQqUgvVvv5A", rounded: false },
-    { nome: "Java", url_img: "https://cdn.brandfetch.io/java.com/w/379/h/512/logo?c=1id5-s0OdQqUgvVvv5A", rounded: false },
-    { nome: "MongoDB", url_img: "https://cdn.brandfetch.io/mongodb.com/w/400/h/400?c=1id5-s0OdQqUgvVvv5A", rounded: true },
-    { nome: "Tailwind CSS", url_img: "https://cdn.brandfetch.io/tailwindcss.com/w/400/h/400?c=1id5-s0OdQqUgvVvv5A", rounded: true },
-    { nome: "GitHub", url_img: "https://cdn.brandfetch.io/github.com/w/512/h/502/symbol?c=1id5-s0OdQqUgvVvv5A", rounded: false },
-    { nome: "AWS", url_img: "https://cdn.brandfetch.io/aws.com/w/512/h/512/logo?c=1id5-s0OdQqUgvVvv5A", rounded: false },
-    { nome: "Figma", url_img: "https://cdn.brandfetch.io/figma.com/w/341/h/512/symbol?c=1id5-s0OdQqUgvVvv5A", rounded: false },
-    { nome: "Postman", url_img: "https://cdn.brandfetch.io/postman.com/w/240/h/240?c=1id5-s0OdQqUgvVvv5A", rounded: true },
-    { nome: "NestJS", url_img: "https://nestjs.com/img/logo_text.svg", rounded: false }
-  ];
+    { nome: "TypeScript", url_img: Images.ts_logo, rounded: false },
+    { nome: "Angular", url_img: Images.angular, rounded: true },
+    { nome: "React", url_img: Images.react, rounded: false },
+    { nome: "Node.js", url_img: Images.nodejs, rounded: false },
+    { nome: "Express.js", url_img: Images.expressjs, rounded: false },
+    { nome: "MySQL", url_img: Images.mysql, rounded: false },
+    { nome: "PostgreSQL", url_img: Images.postgresql, rounded: false },
+    { nome: "Java", url_img: Images.java, rounded: false },
+    { nome: "MongoDB", url_img: Images.mongodb, rounded: true },
+    { nome: "Tailwind CSS", url_img: Images.tailwind, rounded: true },
+    { nome: "GitHub", url_img: Images.github, rounded: false },
+    { nome: "AWS", url_img: Images.aws, rounded: false },
+    { nome: "Figma", url_img: Images.figma, rounded: false },
+    { nome: "Postman", url_img: Images.postman, rounded: true },
+    { nome: "NestJS", url_img: Images.nestjs, rounded: false },
+    { nome: "Spring Boot", url_img: Images.springboot, rounded: true },
+];
 
   return (
     <div className="bg-[#76989B] text-white py-8 overflow-hidden">
