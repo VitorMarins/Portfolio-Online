@@ -19,12 +19,12 @@ Este é o repositório do meu site portfólio, desenvolvido para centralizar meu
 
 1. **Instale as dependências:**
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. **Inicie o servidor de desenvolvimento:**
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 ---
