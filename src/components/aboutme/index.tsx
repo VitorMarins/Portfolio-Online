@@ -1,33 +1,44 @@
 import { myphoto, fundoMensagem } from "../../assets/images";
 
 export default function AboutMe() {
+    const scrollToSection = (sectionId: string) => {
+        document
+            .getElementById(sectionId)
+            ?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
-        <section className="relative w-full overflow-hidden" id="home">
+        <section
+            id="home"
+            className="relative w-full overflow-hidden"
+        >
+            {/* Foto principal */}
             <img
                 src={myphoto}
                 alt="Foto de Vitor Marins"
                 fetchPriority="high"
                 loading="eager"
                 decoding="sync"
-                className="block w-full h-auto object-cover"
+                className="block h-auto w-full object-cover"
             />
 
+            {/* Apresentação */}
             <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
                 className="
                     absolute
-                    top-1/2
                     left-4
-                    -translate-y-1/2
+                    top-1/2
+                    z-20
                     w-[55%]
                     max-w-2xl
+                    -translate-y-1/2
                     sm:left-8
                     md:left-12
                     lg:left-16
                     xl:left-24
-                    z-20
                 "
-                data-aos="fade-right"
-                data-aos-duration="1000"
             >
                 <div className="relative">
                     <img
@@ -35,18 +46,22 @@ export default function AboutMe() {
                         alt=""
                         aria-hidden="true"
                         loading="eager"
-                        className="block w-full h-auto"
+                        className="block h-auto w-full"
                     />
 
                     <div
                         className="
-                            absolute inset-0
-                            flex flex-col
-                            items-center justify-center
+                            absolute
+                            inset-0
+                            flex
+                            flex-col
+                            items-center
+                            justify-center
                             px-4
+                            text-center
+                            text-black
                             sm:px-8
                             md:px-12
-                            text-center text-black
                         "
                     >
                         <h1
@@ -73,6 +88,30 @@ export default function AboutMe() {
                         >
                             Software Developer
                         </p>
+
+                        <button
+                            type="button"
+                            onClick={() => scrollToSection("contact")}
+                            className="
+                                mt-4
+                                cursor-pointer
+                                rounded-full
+                                bg-blue-500
+                                px-6
+                                py-3
+                                font-bold
+                                text-white
+                                transition
+                                duration-300
+                                hover:bg-blue-600
+                                focus:outline-none
+                                focus:ring-2
+                                focus:ring-blue-400
+                                focus:ring-offset-2
+                            "
+                        >
+                            Contact
+                        </button>
                     </div>
                 </div>
             </div>
