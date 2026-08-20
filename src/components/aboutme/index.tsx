@@ -4,7 +4,7 @@ export default function AboutMe() {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/Vitor_Barbosa_Marins_Currículo.pdf';
+        link.href = `${import.meta.env.BASE_URL}Vitor_Barbosa_Marins_Currículo.pdf`;
         link.download = 'Vitor_Barbosa_Marins_Currículo.pdf';
         document.body.appendChild(link);
         link.click();
