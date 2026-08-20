@@ -35,7 +35,7 @@ export default function ExperiencesContainer() {
     ];
 
     return (
-        <section id="experiences" className="bg-[#2d3a3b] text-white py-10">
+        <section id="experiences" className="bg-[#2d3a3b] text-white py-10 scroll-mt-20">
 
             <h2 className="text-4xl mb-6 text-center font-semibold">My Experiences</h2>
 

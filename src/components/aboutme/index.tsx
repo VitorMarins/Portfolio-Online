@@ -10,7 +10,7 @@ export default function AboutMe() {
     return (
         <section
             id="home"
-            className="relative w-full overflow-hidden"
+            className="relative w-full overflow-hidden scroll-mt-20"
         >
             {/* Foto principal */}
             <img
@@ -110,7 +110,7 @@ export default function AboutMe() {
                                 focus:ring-offset-2
                             "
                         >
-                            Contact
+                            Download CV
                         </button>
                     </div>
                 </div>

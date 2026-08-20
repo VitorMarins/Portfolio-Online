@@ -1,6 +1,6 @@
 export default function Education() {
     return (
-        <section className="flex flex-col gap-4 px-4 sm:px-10 py-8 bg-[#1b4d53] text-white" id="education">
+        <section className="flex flex-col gap-4 px-4 sm:px-10 py-8 bg-[#1b4d53] text-white scroll-mt-20" id="education">
             <h2 className="text-4xl mb-6 text-center font-semibold">Education</h2>
             <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">

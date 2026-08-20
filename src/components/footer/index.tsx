@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#3F3F3F] text-white py-10 px-4">
+        <footer className="bg-[#3F3F3F] text-white py-10 px-4 scroll-mt-20">
             <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-4">
                 <h2 className="text-4xl font-semibold underline underline-offset-4 decoration-blue-400" id="contact">
                     Contact
