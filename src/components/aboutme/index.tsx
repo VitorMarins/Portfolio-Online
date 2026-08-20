@@ -1,10 +1,14 @@
 import { myphoto, fundoMensagem } from "../../assets/images";
 
 export default function AboutMe() {
-    const scrollToSection = (sectionId: string) => {
-        document
-            .getElementById(sectionId)
-            ?.scrollIntoView({ behavior: "smooth" });
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/Vitor_Barbosa_Marins_Currículo.pdf';
+        link.download = 'Vitor_Barbosa_Marins_Currículo.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     return (
@@ -91,7 +95,7 @@ export default function AboutMe() {
 
                         <button
                             type="button"
-                            onClick={() => scrollToSection("contact")}
+                            onClick={handleDownload}
                             className="
                                 mt-4
                                 cursor-pointer
