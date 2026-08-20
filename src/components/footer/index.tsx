@@ -9,7 +9,7 @@ export default function Footer() {
                 </h2>
                 <address className="not-italic space-y-1 text-lg">
                     <p>+55 (81) 99569-6894</p>
-                    <p>Brazil</p>
+                    <p>Brazil,Pernambuco,Recife</p>
                     <p className=" transition delay-150 duration-300 ease-in-out hover:scale-110">
                         <a href="mailto:vitorbarbosamarins@gmail.com" className="hover:underline">
                             vitorbarbosamarins&#64;gmail.com
