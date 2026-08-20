@@ -10,11 +10,13 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <AboutMe />
-      <Education />
-      <ExperiencesContainer />
-      <Skills />
-      <Footer />
+      <main className="pt-20 md:pt-14">
+        <AboutMe />
+        <Education />
+        <ExperiencesContainer />
+        <Skills />
+        <Footer />
+      </main>
     </>
   )
 };
