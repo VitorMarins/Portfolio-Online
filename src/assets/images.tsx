@@ -21,7 +21,7 @@ const github = "https://cdn.brandfetch.io/github.com/w/512/h/502/symbol?c=1id5-s
 const aws = "https://cdn.brandfetch.io/aws.com/w/512/h/512/logo?c=1id5-s0OdQqUgvVvv5A";
 const figma = "https://cdn.brandfetch.io/figma.com/w/341/h/512/symbol?c=1id5-s0OdQqUgvVvv5A";
 const postman = "https://cdn.brandfetch.io/postman.com/w/240/h/240?c=1id5-s0OdQqUgvVvv5A";
-const nestjs = "https://nestjs.com/img/logo_text.svg";
+const nestjs = "https://nestjs.com/logo.svg";
 const springboot = "https://cdn.brandfetch.io/spring.io/w/400/h/400/icon?c=1id5-s0OdQqUgvVvv5A";
 
 export {
